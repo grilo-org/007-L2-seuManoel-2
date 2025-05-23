@@ -1,27 +1,14 @@
-#  API de Embalagem – Seu Manoel
+# 📦 API de Embalagem – Seu Manoel
 
 API que recebe pedidos com produtos e retorna a melhor forma de embalar em caixas otimizadas com base em suas dimensões.
 
 ---
 
-## Endpoints
+## 🚀 Endpoints
 
 ### POST `/api/pedidos`
 
 Recebe pedidos com uma lista de produtos contendo dimensões (altura, largura, comprimento) e retorna as caixas utilizadas para empacotar.
-
-#### Exemplo de requisição
-
-```json
-[
-  {
-    "codigoPedido": "001",
-    "produtos": [
-      { "nome": "Controle", "altura": 10, "largura": 10, "comprimento": 10 },
-      { "nome": "Console", "altura": 30, "largura": 30, "comprimento": 20 }
-    ]
-  }
-]
 
 ## Docker
 
@@ -39,5 +26,17 @@ Maven
 Swagger (OpenAPI)
 Docker
 
-Autor
-Lucas Cavalcante.
+#### ✅ Exemplo de requisição
+
+```json
+[
+  {
+    "codigoPedido": "001",
+    "produtos": [
+      { "nome": "Controle", "altura": 10, "largura": 10, "comprimento": 10 },
+      { "nome": "Console", "altura": 30, "largura": 30, "comprimento": 20 }
+    ]
+  }
+]
+
+
