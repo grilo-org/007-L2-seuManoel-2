@@ -20,7 +20,6 @@ public class PedidoService {
 			List<CaixaResponseDTO> caixasUsadas = new ArrayList<>();
 			List<ProdutoDTO> produtosRestantes = new ArrayList<>(pedido.produtos());
 
-			// ✅ Validação: produto incompatível
 			for (ProdutoDTO produto : produtosRestantes) {
 				boolean cabeEmAlguma = caixasDisponiveis.stream()
 						.anyMatch(caixa -> produto.altura() <= caixa.getAltura()
@@ -33,7 +32,6 @@ public class PedidoService {
 				}
 			}
 
-			// ✅ Lógica de empacotamento (volume)
 			for (Caixa caixa : caixasDisponiveis) {
 				List<ProdutoDTO> produtosNaCaixa = new ArrayList<>();
 				double volumeDisponivel = caixa.getVolume();

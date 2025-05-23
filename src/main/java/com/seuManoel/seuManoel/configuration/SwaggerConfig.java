@@ -11,6 +11,6 @@ public class SwaggerConfig {
 	@Bean
 	public OpenAPI customOpenAPI() {
 		return new OpenAPI().info(new Info().title("API de Embalagem de Pedidos").version("1.0")
-				.description("Organiza produtos em caixas de papelão"));
+				.description("Organiza produtos em caixas"));
 	}
 }
