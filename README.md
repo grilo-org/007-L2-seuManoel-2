@@ -23,12 +23,11 @@ Recebe pedidos com uma lista de produtos contendo dimensões (altura, largura, c
   }
 ]
 
-Docker
-Build da imagem
-docker build -t seu-manoel-api .
+## Docker
 
-Executar o container
-docker run -p 8080:8080 seu-manoel-api
+**Build da imagem**
+
+docker build -t seu-manoel-api .
 
 Acesse a documentação Swagger em:
 http://localhost:8080/swagger-ui.html
