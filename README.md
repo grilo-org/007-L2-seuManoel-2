@@ -1,10 +1,10 @@
-# 📦 API de Embalagem – Seu Manoel
+# API Seu Manoel das caixas.
 
 API que recebe pedidos com produtos e retorna a melhor forma de embalar em caixas otimizadas com base em suas dimensões.
 
 ---
 
-## 🚀 Endpoints
+## Endpoints
 
 ### POST `/api/pedidos`
 
