@@ -1,17 +1,38 @@
-API de Embalagem - Seu Manoel
+# API Seu Manoel das caixas.
 
-API que recebe pedidos com produtos e retorna como embalar em caixas otimizadas.
+API que recebe pedidos com produtos e retorna a melhor forma de embalar em caixas otimizadas com base em suas dimensões.
 
+---
 
-Endpoints
+## Endpoints
 
 ### POST `/api/pedidos`
 
-Recebe pedidos com produtos (dimensões) e retorna as caixas utilizadas.
+Recebe pedidos com uma lista de produtos contendo dimensões (altura, largura, comprimento) e retorna as caixas utilizadas para empacotar.
 
-### Exemplo de entrada
+## Docker
 
-Exemplo de json
+**Build da imagem**
+
+docker build -t seu-manoel-api .
+
+**Executar o container**
+
+docker run -p 8080:8080 seu-manoel-api
+
+Acesse a documentação Swagger em:
+http://localhost:8080/swagger-ui.html
+
+Stack utilizada
+Java 17
+Spring Boot
+Maven
+Swagger (OpenAPI)
+Docker
+
+#### ✅ Exemplo de requisição
+
+```json
 [
   {
     "codigoPedido": "001",
@@ -22,9 +43,4 @@ Exemplo de json
   }
 ]
 
-Docker
-docker build -t seu-manoel-api .
-docker run -p 8080:8080 seu-manoel-api
 
-Stack
-Java 17, Spring Boot, Maven, Docker, Swagger
