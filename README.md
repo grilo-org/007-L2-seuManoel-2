@@ -23,7 +23,9 @@ Exemplo de json
 ]
 
 Docker
+
 docker build -t seu-manoel-api .
+
 docker run -p 8080:8080 seu-manoel-api
 
 Stack
