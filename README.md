@@ -16,6 +16,10 @@ Recebe pedidos com uma lista de produtos contendo dimensões (altura, largura, c
 
 docker build -t seu-manoel-api .
 
+**Executar o container**
+
+docker run -p 8080:8080 seu-manoel-api
+
 Acesse a documentação Swagger em:
 http://localhost:8080/swagger-ui.html
 
